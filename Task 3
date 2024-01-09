@@ -1,0 +1,96 @@
+import java.util.Scanner;
+
+class Game {
+    Scanner s = new Scanner(System.in);
+    int count = 0;
+
+    public void startGame() {
+        System.out.println("Welcome!!");
+        System.out.println("Let's Start.....");
+
+        System.out.println("1. What does CAD stand for in engineering?");
+        System.out.println("a) Computer-Aided Design");
+        System.out.println("b) Centralized Algorithmic Diagrams");
+        System.out.println("c) Coordinated Architectural Drafting");
+        System.out.println("d) Computational Analysis Development");
+        
+        char ans1 = s.next().charAt(0);
+
+        if (ans1 == 'a' || ans1 == 'A') {
+            System.out.println("Yes, your answer is correct!! Good going");
+            count++;
+        } else {
+            System.out.println("No, the correct option is A");
+        }
+
+        System.out.println("2. Which material is commonly used in 3D printing for its flexibility and durability?");
+        System.out.println("a) ABS (Acrylonitrile Butadiene Styrene)");
+        System.out.println("b) PLA (Polylactic Acid)");
+        System.out.println("c) Nylon");
+        System.out.println("d) PETG (Polyethylene Terephthalate Glycol)");
+        
+        char ans2 = s.next().charAt(0);
+
+        if (ans2 == 'a' || ans2 == 'A') {
+            System.out.println("Yes, your answer is correct!! Good going");
+            count++;
+        } else {
+            System.out.println("No, the correct option is A");
+        }
+
+        System.out.println("3. What does the term \"Ohm's Law\" describe in electrical engineering?");
+        System.out.println("a) The relationship between voltage, current, and resistance");
+        System.out.println("b) The behavior of capacitors in a circuit");
+        System.out.println("c) The principles of electromagnetic induction");
+        System.out.println("d)The properties of magnetic fields in conductors");
+        
+        char ans3 = s.next().charAt(0);
+
+        if (ans3 == 'a' || ans3 == 'A') {
+            System.out.println("Yes, your answer is correct!! Good going");
+            count++;
+        } else {
+            System.out.println("No, the correct option is A");
+        }
+
+        System.out.println("4. What is the purpose of a Fourier transform in signal processing?");
+        System.out.println("a) To convert a signal from time domain to frequency domain");
+        System.out.println("b) To amplify weak signals in a circuit");
+        System.out.println("c) To regulate the flow of current in a system");
+        System.out.println("d)To reduce noise interference in communication systems");
+        
+        char ans4 = s.next().charAt(0);
+
+        if (ans4 == 'a' || ans4 == 'A') {
+            System.out.println("Yes, your answer is correct!! Good going");
+            count++;
+        } else {
+            System.out.println("No, the correct option is A");
+        }
+
+        System.out.println("5. In civil engineering, what is the function of a geotechnical engineer?");
+        System.out.println("a) Designing electrical systems for buildings");
+        System.out.println("b) Analyzing and designing structures to resist earthquakes");
+        System.out.println("c) Testing soil and rock for construction projects");
+        System.out.println("d) Developing software for construction management");
+        
+        char ans5 = s.next().charAt(0);
+
+        if (ans5 == 'c' || ans5 == 'C') {
+            System.out.println("Yes, your answer is correct!! Good going");
+            count++;
+        } else {
+            System.out.println("No, the correct option is C");
+        }
+
+
+        System.out.println("You got " + count + " out of 5 questions correct.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Game obj = new Game();
+        obj.startGame();
+    }
+}
